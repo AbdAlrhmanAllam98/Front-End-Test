@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    font-family: 'Open Sans', arial;
+}
+
+.home {
+    height: 620px;
+    background-image: url(images/business-2.jpg);
+    background-size: cover;
+    overflow: auto;
+    text-align: center;
+    color: white;
+}
+
+.home .layer {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: auto;
+}
+
+.home p {
+    font-size: 20px;
+    margin-top: 220px;
+}
+
+.home h1 {
+    font-size: 50px;
+    margin-top: 30px;
+    font-weight: 400;
+}
+
+.home button {
+    padding: 15px 28px;
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.features {
+    padding: 20px;
+}
+
+.features .container {
+    width: 80%;
+    overflow: auto;
+    margin: auto;
+}
+
+.features .feature {
+    float: left;
+    width: 33.333%;
+    overflow: auto;
+}
+
+.features .feature_img {
+    float: left;
+    width: 25%;
+}
+
+.features .feature_desc {
+    float: left;
+    width: 75%;
+}
+
+.feature_desc h4 {
+    padding: 5px;
+}
+
+.feature_desc p {
+    padding: 5px;
+    color: #808070
+}
+
+.our_services {
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.our_services h3 {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.our_services p {
+    font-size: 20px;
+    margin: 17px auto 0px;
+    color: #888;
+}
+
+.service {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    margin-left: 3px;
+    background-color: white;
+}
+
+.service img {
+    width: 100%;
+}
+
+.our_secret {
+    overflow: auto;
+    text-align: left;
+    margin-top: 30px;
+    height: 600px;
+    padding: 20px;
+    background-color: white;
+}
+
+.our_secret_info {
+    width: 55%;
+    float: left;
+    margin-top: 50px;
+}
+
+.our_secret_info button {
+    padding: 15px 28px;
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.our_secret_img {
+    width: 40%;
+    float: left;
+}
+
+.our_secret_img img {
+    width: 100%;
+}
