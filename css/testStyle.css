@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.home {
+    background-image: url(images/shutterstock_277750193.jpg);
+    background-size: cover;
+    text-align: center;
+    padding-top: 100px;
+    height: 650px;
+}
+
+.home p {
+    font-family: 'Dancing Script', cursive;
+}
+
+.home .btn {
+    padding: 15px;
+    margin-top: 20px;
+    border: none;
+    background-color: white;
+}
+
+.home .btn1 {
+    background-color: #c1ab84;
+}
+
+th {
+    color: darkmagenta;
+    background-color: goldenrod;
+}
+
+.special {
+    color: aquamarine;
+}
+
+.special1 {
+    background-color: transparent;
+}
+
+.parent {
+    background-image: url(images/bg.jpg);
+    background-size: 100% 100%;
+    background-position: top left;
+    width: 350px;
+    height: 350px;
+    margin-top: 10px;
+    border-top-color: khaki;
+    border-top-style: groove;
+    border-top-width: 3px;
+    border-bottom: hotpink 5px dashed;
+    border-top-right-radius: 50px;
+    margin: 30px 0px 20px 50px;
+}
+
+.child {
+    width: 50%;
+    height: 50%;
+    background-color: aquamarine;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.product {
+    display: inline-block;
+    width: 24%;
+    background-color: aqua;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: 20%;
+}
+
+.profile {
+    font-weight: 100;
+    text-align: center;
+}
+
+.profile img {
+    width: 300px;
+    height: 250px;
+}
+
+.profile button {
+    background-color: hotpink;
+    border: none;
+    padding: 10px;
+}
+
+.float {
+    float: left;
+}
+
+.clr {
+    clear: both;
+}
+
+.meals {
+    padding: 40px;
+    overflow: auto;
+    text-align: center;
+}
+
+.meals .meal {
+    float: right;
+    text-align: center;
+    width: 25%;
+}
+
+.meals img {
+    border-radius: 50%;
+}
+
+.meals .brdr {
+    width: 25%;
+    height: 7px;
+    background-color: gray;
+    margin: auto;
+}
+
+.chef {
+    overflow: auto;
+    padding: 30px;
+}
+
+.chef .chef-img {
+    width: 40%;
+    float: left;
+}
+
+.chef .chef-img img {
+    width: 100%;
+}
+
+.chef .chef-info {
+    float: left;
+    width: 60%;
+    margin-top: 300px;
+    text-align: center;
+}
+
+.chef-info .discover {
+    font-family: 'Dancing Script', cursive;
+    color: #f2ce08;
+}
+
+.chef-info button {
+    padding: 15px;
+    margin-top: 20px;
+    border: 2px black solid;
+    background-color: white;
+}
+
+.fixed-img {
+    width: 100%;
+    height: 400px;
+    background-image: url(images/bgs.jpg);
+    background-attachment: fixed;
+    margin-bottom: 30px;
+}
