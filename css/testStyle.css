@@ -9,8 +9,53 @@ body {
     font-style: italic;
 }
 
+.the_h1 {
+    text-align: center;
+    position: relative;
+    height: 50px;
+}
+
+.the_h1::after {
+    content: "";
+    background-color: gray;
+    height: 2px;
+    width: 40%;
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+}
+
+.the_h1::before {
+    content: "";
+    background-color: gray;
+    height: 2px;
+    width: 40%;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+}
+
+.nav {
+    background-color: goldenrod;
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.backToTop {
+    width: 60px;
+    height: 60px;
+    background-color: gray;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
 .home {
-    background-image: url(images/shutterstock_277750193.jpg);
+    background-image: url(../images/shutterstock_277750193.jpg);
     background-size: cover;
     text-align: center;
     padding-top: 100px;
@@ -45,12 +90,22 @@ th {
     background-color: transparent;
 }
 
+.grand-pa {
+    width: 700px;
+    height: 700px;
+    /*position: relative;   fe 7ala en el parent ge gwah position 
+                f bkda 5las el child hai5od elle fe parent msh el grand-pa*/
+    background-color: lime;
+}
+
 .parent {
-    background-image: url(images/bg.jpg);
-    background-size: 100% 100%;
-    background-position: top left;
-    width: 350px;
-    height: 350px;
+    /*
+                background-image: url(../images/bg.jpg);
+                background-size: 100% 100%;
+                background-position: top left;*/
+    width: 500px;
+    height: 500px;
+    background-color: indianred;
     margin-top: 10px;
     border-top-color: khaki;
     border-top-style: groove;
@@ -58,14 +113,21 @@ th {
     border-bottom: hotpink 5px dashed;
     border-top-right-radius: 50px;
     margin: 30px 0px 20px 50px;
+    /* lw el satr dah mknsh mawgod kan hairo7 yshof el grand-pa lw tl3 gwah hairo7 ya5od ele fe grand-pa*/
+    position: relative;
+    /* de fe 7ala ene 3awz a5le el parent dah byt7rk gwa el gran-pa
+                position: absolute;
+                bottom: 0;
+                right: 0;*/
 }
 
 .child {
-    width: 50%;
-    height: 50%;
+    width: 250px;
+    height: 250px;
     background-color: aquamarine;
-    border-radius: 50%;
-    margin: auto;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
 }
 
 .product {
