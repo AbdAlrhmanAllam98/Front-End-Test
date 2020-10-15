@@ -1,0 +1,60 @@
+body
+{
+    font-family: 'segoe ui light';
+}
+.item
+{
+    position: relative;
+    margin-bottom: 15px;
+    cursor: pointer;
+    
+}
+.item .item-caption
+{
+    color:black;
+    background-color:rgba(245, 222, 179, 0.5);
+    font-weight: 700;
+    position:absolute;
+    bottom: 20px;
+    width: 80%;
+    left: 10%;
+    cursor: default;
+}
+.lightbox-container
+{
+    background-color: rgba(0, 0, 0, 0.55);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left:0;
+    bottom: 0;
+    display: none;
+    /*transform: scale(0,0);*/
+    
+}
+.lightbox-container .lightbox-item
+{
+    background-image:url(../images/portfolio-1.jpg) ;
+    background-size: 100% 100%;
+    width:40%;
+    height: 80%;
+    position: relative;
+    /*
+    transform: scale(0,0);
+    transition: transform 1s;
+
+    dah 3ashan 5atr a3ml ll image lma Yclick 3leha yb2a feha scale by7sl
+    w ll lightbox-container h3ml transform bs w msh h3ml transition bs lazm akon fe HTML 7att d-flex
+    */
+}
+#close
+{
+    position: absolute;
+    top:10px;
+    right:10px;
+}
+.lightbox-item i
+{
+    cursor: pointer;
+    font-size: 20px;
+}

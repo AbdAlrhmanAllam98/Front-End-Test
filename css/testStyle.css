@@ -1,345 +1,417 @@
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    
-    body {
-        font-family: sans-serif;
-        font-weight: bolder;
-        font-style: italic;
-    }
-    
-    .the_h1 {
-        text-align: center;
-        position: relative;
-        height: 50px;
-    }
-    
-    .the_h1::after {
-        content: "";
-        background-color: gray;
-        height: 2px;
-        width: 40%;
-        position: absolute;
-        bottom: 50%;
-        right: 0;
-    }
-    
-    .the_h1::before {
-        content: "";
-        background-color: gray;
-        height: 2px;
-        width: 40%;
-        position: absolute;
-        bottom: 50%;
-        left: 0;
-    }
-    
-    .nav {
-        background-color: goldenrod;
-        height: 10%;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        right: 0;
-    }
-    
-    .backToTop {
-        width: 60px;
-        height: 60px;
-        background-color: gray;
-        border-radius: 50%;
-        position: fixed;
-        bottom: 15px;
-        right: 15px;
-    }
-    
-    .home {
-        background-image: url(../images/shutterstock_277750193.jpg);
-        background-size: cover;
-        text-align: center;
-        padding-top: 100px;
-        height: 650px;
-    }
-    
-    .home p {
-        font-family: 'Dancing Script', cursive;
-    }
-    
-    .home .btn {
-        padding: 15px;
-        margin-top: 20px;
-        border: none;
-        background-color: white;
-    }
-    
-    .home .btn1 {
-        background-color: #c1ab84;
-    }
-    
-    th {
-        color: darkmagenta;
-        background-color: goldenrod;
-    }
-    
-    .special {
-        color: aquamarine;
-    }
-    
-    .special1 {
-        background-color: transparent;
-    }
-    
-    .grand-pa {
-        width: 700px;
-        height: 700px;
-        /*position: relative;   fe 7ala en el parent ge gwah position 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    overflow-x: hidden;
+}
+
+.the_h1 {
+    text-align: center;
+    position: relative;
+    height: 50px;
+}
+
+.the_h1::after {
+    content: "";
+    background-color: gray;
+    height: 2px;
+    width: 40%;
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+}
+
+.the_h1::before {
+    content: "";
+    background-color: gray;
+    height: 2px;
+    width: 40%;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+}
+
+.nav {
+    background-color: goldenrod;
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.backToTop {
+    width: 60px;
+    height: 60px;
+    background-color: gray;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+.home {
+    background-image: url(../images/shutterstock_277750193.jpg);
+    background-size: cover;
+    text-align: center;
+    padding-top: 100px;
+    height: 650px;
+}
+
+.home p {
+    font-family: 'Dancing Script', cursive;
+}
+
+.home .btn {
+    padding: 15px;
+    margin-top: 20px;
+    border: none;
+    background-color: white;
+}
+
+.home .btn1 {
+    background-color: #c1ab84;
+}
+
+th {
+    color: darkmagenta;
+    background-color: goldenrod;
+}
+
+.special {
+    color: aquamarine;
+}
+
+.special1 {
+    background-color: transparent;
+}
+
+.grand-pa {
+    width: 700px;
+    height: 700px;
+    /*position: relative;   fe 7ala en el parent ge gwah position 
                 f bkda 5las el child hai5od elle fe parent msh el grand-pa*/
-        background-color: lime;
-    }
-    
-    .parent {
-        /*
+    background-color: lime;
+}
+
+.parent {
+    /*
                 background-image: url(../images/bg.jpg);
                 background-size: 100% 100%;
                 background-position: top left;*/
-        width: 500px;
-        height: 500px;
-        background-color: indianred;
-        margin-top: 10px;
-        border-top-color: khaki;
-        border-top-style: groove;
-        border-top-width: 3px;
-        border-bottom: hotpink 5px dashed;
-        border-top-right-radius: 50px;
-        margin: 30px 0px 20px 50px;
-        /* lw el satr dah mknsh mawgod kan hairo7 yshof el grand-pa lw tl3 gwah hairo7 ya5od ele fe grand-pa*/
-        position: relative;
-        /* de fe 7ala ene 3awz a5le el parent dah byt7rk gwa el gran-pa
+    width: 500px;
+    height: 500px;
+    background-color: indianred;
+    margin-top: 10px;
+    border-top-color: khaki;
+    border-top-style: groove;
+    border-top-width: 3px;
+    border-bottom: hotpink 5px dashed;
+    border-top-right-radius: 50px;
+    margin: 30px 0px 20px 50px;
+    /* lw el satr dah mknsh mawgod kan hairo7 yshof el grand-pa lw tl3 gwah hairo7 ya5od ele fe grand-pa*/
+    position: relative;
+    /* de fe 7ala ene 3awz a5le el parent dah byt7rk gwa el gran-pa
                 position: absolute;
                 bottom: 0;
                 right: 0;*/
-    }
-    
-    .child {
-        width: 250px;
-        height: 250px;
-        background-color: aquamarine;
-        position: absolute;
-        bottom: 0px;
-        right: 0px;
-    }
-    
-    .product {
-        display: inline-block;
-        width: 24%;
-        background-color: aqua;
-        text-align: center;
-    }
-    
-    .product img {
-        width: 100%;
-        height: 20%;
-    }
-    
-    .items {
-        width: 300px;
-        position: relative;
-        border: solid 3px wheat;
-        overflow: hidden;
-    }
-    
-    .items img {
-        width: 100%;
-        transition: 2s transform;
-    }
-    
-    .item-caption {
-        background: rgba(42, 63, 85, 0.4);
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    
-    .items:hover .item-caption h2 {
-        left: 0;
-        transform: rotate(360deg);
-    }
-    
-    .items:hover .item-caption p {
-        top: 0;
-        transform: rotate(-360deg);
-    }
-    
-    .items:hover img {
-        transform: scale(1.2);
-    }
-    
-    .item-caption h2 {
-        background-color: #2A3F55;
-        padding: 10px;
-        position: relative;
-        left: 100%;
-        transition: 2s transform;
-    }
-    
-    .item-caption p {
-        padding: 10px;
-        position: relative;
-        top: 100%;
-        transition: 3s transform;
-    }
-    
-    .profile {
-        font-weight: 100;
-        text-align: center;
-    }
-    
-    .profile img {
-        width: 300px;
-        height: 250px;
-    }
-    
-    .profile button {
-        background-color: hotpink;
-        border: none;
-        padding: 10px;
-    }
-    
-    .float {
-        float: left;
-    }
-    
-    .clr {
-        clear: both;
-    }
-    
-    .meals {
-        padding: 40px;
-        overflow: auto;
-        text-align: center;
-    }
-    
-    .meals .meal {
-        float: right;
-        text-align: center;
-        width: 25%;
-    }
-    
-    .meals img {
-        border-radius: 50%;
-    }
-    
-    .meals .brdr {
-        width: 25%;
-        height: 7px;
-        background-color: gray;
-        margin: auto;
-    }
-    
-    .chef {
-        overflow: auto;
-        padding: 30px;
-    }
-    
-    .chef .chef-img {
-        width: 40%;
-        float: left;
-    }
-    
-    .chef .chef-img img {
-        width: 100%;
-    }
-    
-    .chef .chef-info {
-        float: left;
-        width: 60%;
-        margin-top: 300px;
-        text-align: center;
-    }
-    
-    .chef-info .discover {
-        font-family: 'Dancing Script', cursive;
-        color: #f2ce08;
-    }
-    
-    .chef-info button {
-        padding: 15px;
-        margin-top: 20px;
-        border: 2px black solid;
-        background-color: white;
-    }
-    
-    .fixed-img {
-        width: 100%;
-        height: 400px;
-        background-image: url(images/bgs.jpg);
-        background-attachment: fixed;
-        margin-bottom: 30px;
-    }
-    
-    #contacts {
-        border: solid 3px teal;
-        padding: 10px;
-        max-width: 100px;
-        margin-bottom: 20px;
-        position: relative;
-    }
-    
-    #contacts::before {
-        content: "";
-        width: 25px;
-        height: 30px;
-        position: absolute;
-        top: 34px;
-        left: 20px;
-        background-color: white;
-        /*3ashan lw 3awz elle fe before y3`ti 3la ele gwa el after*/
-        z-index: 5;
-    }
-    
-    #contacts::after {
-        content: "";
-        width: 3px;
-        height: 30px;
-        position: absolute;
-        top: 34px;
-        right: 72px;
-        background-color: teal;
-    }
-    
-    .test {
-        background-color: red;
-        width: 0px;
-        height: 0px;
-        position: absolute;
-        bottom: 20px;
-        right: 100px;
-        border-right: solid 20px green;
-        border-left: solid 20px green;
-        border-top: solid 20px green;
-        border-bottom: solid 20px transparent;
-    }
-    
-    .transitions {
-        width: 5%;
-        height: 220px;
-        background-color: red;
-        margin-bottom: 20px;
-        transition-property: transform, width;
-        transition-duration: 3s;
-        transition-delay: 2s;
-        transition-timing-function: ease-in;
-        /*short hand
+}
+
+.child {
+    width: 250px;
+    height: 250px;
+    background-color: aquamarine;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.product {
+    display: inline-block;
+    width: 24%;
+    background-color: aqua;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: 20%;
+}
+
+.images {
+    overflow: auto;
+}
+
+.items {
+    width: 25%;
+    position: relative;
+    border: solid 3px wheat;
+    overflow: hidden;
+    float: left;
+}
+
+.images_layer {
+    padding: 10px;
+}
+
+.items img {
+    width: 100%;
+    transition: 2s transform;
+}
+
+.item-caption {
+    background: rgba(42, 63, 85, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.items:hover .item-caption h2 {
+    left: 0;
+    transform: rotate(360deg);
+}
+
+.items:hover .item-caption p {
+    top: 0;
+    transform: rotate(-360deg);
+}
+
+.items:hover img {
+    transform: scale(1.2);
+}
+
+.item-caption h2 {
+    background-color: #2A3F55;
+    padding: 10px;
+    position: relative;
+    left: 100%;
+    transition: 2s transform;
+}
+
+.item-caption p {
+    padding: 10px;
+    position: relative;
+    top: 100%;
+    transition: 3s transform;
+}
+
+.profile {
+    font-weight: 100;
+    text-align: center;
+}
+
+.profile img {
+    width: 300px;
+    height: 250px;
+}
+
+.profile button {
+    background-color: hotpink;
+    border: none;
+    padding: 10px;
+}
+
+.float {
+    float: left;
+}
+
+.clr {
+    clear: both;
+}
+
+.meals {
+    padding: 40px;
+    overflow: auto;
+    text-align: center;
+}
+
+.meals .meal {
+    float: right;
+    text-align: center;
+    width: 25%;
+}
+
+.meals img {
+    border-radius: 50%;
+}
+
+.meals .brdr {
+    width: 25%;
+    height: 7px;
+    background-color: gray;
+    margin: auto;
+}
+
+.chef {
+    overflow: auto;
+    padding: 30px;
+}
+
+.chef .chef-img {
+    width: 40%;
+    float: left;
+}
+
+.chef .chef-img img {
+    width: 100%;
+}
+
+.chef .chef-info {
+    float: left;
+    width: 60%;
+    margin-top: 300px;
+    text-align: center;
+}
+
+.chef-info .discover {
+    font-family: 'Dancing Script', cursive;
+    color: #f2ce08;
+}
+
+.chef-info button {
+    padding: 15px;
+    margin-top: 20px;
+    border: 2px black solid;
+    background-color: white;
+}
+
+.fixed-img {
+    width: 100%;
+    height: 400px;
+    background-image: url(images/bgs.jpg);
+    background-attachment: fixed;
+    margin-bottom: 30px;
+}
+
+#contacts {
+    border: solid 3px teal;
+    padding: 10px;
+    max-width: 100px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#contacts::before {
+    content: "";
+    width: 25px;
+    height: 30px;
+    position: absolute;
+    top: 34px;
+    left: 20px;
+    background-color: white;
+    /*3ashan lw 3awz elle fe before y3`ti 3la ele gwa el after*/
+    z-index: 5;
+}
+
+#contacts::after {
+    content: "";
+    width: 3px;
+    height: 30px;
+    position: absolute;
+    top: 34px;
+    right: 72px;
+    background-color: teal;
+}
+
+.test {
+    background-color: red;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+    border-right: solid 20px green;
+    border-left: solid 20px green;
+    border-top: solid 20px green;
+    border-bottom: solid 20px transparent;
+}
+
+.transitions {
+    width: 5%;
+    height: 220px;
+    background-color: red;
+    margin-bottom: 20px;
+    transition-property: transform, width;
+    transition-duration: 3s;
+    transition-delay: 2s;
+    transition-timing-function: ease-in;
+    /*short hand
         transition: 10s 2s all ease-in;   duration...delay...property(3ashan lw feh aktr mn 7aga)..timing function  
         */
-        transform-origin: top right;
+    transform-origin: top right;
+}
+
+.transitions:hover {
+    width: 10%;
+    /**transform: scale(2);**/
+    transform: skewX(45deg);
+}
+
+@media(max-width:1000px) and (min-width:800px) {
+    .items {
+        width: 33.33%;
     }
-    
-    .transitions:hover {
-        width: 10%;
-        /**transform: scale(2);**/
-        transform: skewX(45deg);
+}
+
+.animate {
+    animation-name: animate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-size: 100% 100%;
+}
+
+@keyframes animate {
+    0% {
+        background-image: url(../images/bg3.jpg);
     }
+    50% {
+        background-image: url(../images/bg4.jpg);
+    }
+    100% {
+        background-image: url(../images/bg2.jpg);
+    }
+}
+
+.taxi {
+    animation-name: taxi_animation;
+    animation-duration: 5s;
+    position: relative;
+    animation-iteration-count: infinite;
+    flex-direction: ;
+}
+
+@keyframes taxi_animation {
+    0% {
+        left: -600px;
+        top: 0;
+        transform: rotateY(0deg);
+    }
+    50% {
+        left: 1400px;
+        top: 0;
+        transform: rotateY(0deg);
+    }
+    51% {
+        left: 1400px;
+        top: 0;
+        transform: rotateY(180deg);
+    }
+    100% {
+        left: -1400px;
+        top: 0;
+        transform: rotateY(180deg);
+    }
+}

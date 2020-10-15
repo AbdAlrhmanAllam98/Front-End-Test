@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+header {
+    height: 620px;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    color: #fff;
+    position: relative;
+
+}
+header .header-about
+{
+    position: absolute;
+    left:500px;
+}
+header h1 {
+    font-weight: 800;
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
+header p
+{
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
+header .header-about a {
+    color:#adff00 ;
+    margin: auto;
+    position: relative;   /* yt7rk bel nasba le nafso */
+    left:30px;
+    top:20px;
+}
+
+header .social-icons {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+header .social-icons a {
+    border: solid 1px #222;
+    border-radius: 50%;
+    font-size: .875rem;
+    margin: 0 0.5rem;
+    width: 40px;
+    height: 40px;
+    padding: 6px 10px;
+}
+
+header .social-icons i {
+    color: #adff00;
+}
+
+.about {
+    background-image: url(../images/light_dot.jpg);
+}
+
+.title {
+    position: relative;
+}
+.title h2 {
+    font-size: 6rem;
+    color: #f1f1f1;
+    font-weight: 900;
+}
+.title h3 {
+    position: absolute;
+    font-size: 2.8rem;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+.about h6 {
+    color: #ff206e;
+    margin-top: 3px;
+    margin-bottom: 12px;
+}
+.image-about {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+}
+
+.testimonials {
+    background-image: url(../images/light_dot.jpg);
+}
+
+.carousel-item .item {
+    border: 2px solid #f4f4f4;
+    padding:2px;
+}
+.carousel-item img {
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+    border: 2px solid #fff;
+    position: relative;
+    bottom: 50px;
+}
+
+.carousel-item h6 {
+    font-size: 1.3rem;
+}
+
+.carousel-indicators li {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.carousel-indicators {
+    position: static;
+}
+
+.card {
+    border: none;
+}
+
+.btn2 {
+    border: solid 2px rgba(0, 0, 0, .35);
+}
+
+.profile i {
+    color: #ff206e;
+    font-size: 2rem;
+}
